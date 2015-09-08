@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aanmelden</title>
+</head>
+
+<body>
+    <section>
+        <h1>Aanmelden</h1>
+
+        <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+        Tijdens de opleiding werken studenten aan projecten voor echte
+        opdrachtgevers. Ook lopen de studenten stage, in het tweede en
+        afstudeerjaar.</p><em>CMD Amsterdam zoekt altijd naar positieve
+        verbindingen met de creatieve stad Amsterdam.</em>
+
+        <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand
+        formulier invullen. Wij nemen zo nodig contact met u op nadat het
+        formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href=
+        "#">contact</a> met ons opnemen.</p>
+    </section>
+
+        <form>
+           <h2>Formulier</h2>
+            <fieldset>
+                <legend><strong>Contactgegevens:</strong></legend>
+                <label>Naam:<br>
+                <input type="text" name="naam" placeholder="voor- en achternaam" required size="30"></label><br>
+                <label>Bedrijf:<br>
+                <input type="text" name="bedrijf" placeholder="naam van uw bedrijf"
+                required size="30"></label><br>
+                <label>Adres:<br>
+                <input type="text" name="adres" placeholder="straat en huisnummer"
+                required size="30"></label><br>
+                <label>Postcode:<br>
+                <input type="text" maxlength="4" name="cijfers" placeholder="0000"
+                required size="4"></label> -
+                <label><input type="text" maxlength="2" name="letters" placeholder="AA"
+                required size="2"></label><br>
+                <label>Woonplaats:<br>
+                <input type="text" name="plaats" placeholder="plaatsnaam" required size=
+                "30"></label><br>
+                <label>Telefoon:<br>
+                <input type="tel" name="telefoon" placeholder="06-12345678" required
+                size="30"></label><br>
+                <label>E-mail:<br>
+                <input type="email" name="email" placeholder="voorbeeld@voorbeeld.com"
+                required size="30"></label><br>
+                <br>
+                <label>Ik wil mij aanmelden:</label><br>
+                <label><input type="radio" id="project" name="aanmelden">Voor
+                een project</label><br>
+                <label><input type="radio" id="stage" name="aanmelden">Als
+                stagebedrijf</label><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend><strong>Project</strong></legend>
+                <label>Titel:<br>
+                <input type="text" name="titel" placeholder="titel project" required
+                size="30"></label><br>
+                <label>Opdrachtomschrijving:<br>
+                <textarea cols="30" name="opdrachtomschrijving" placeholder=
+                "Geef hier een korte omschrijving van de opdracht" required
+                rows="7">
+</textarea></label><br>
+                <label>Doelgroepomschrijving:<br>
+                <textarea cols="30" name="doelgroepomschrijving" placeholder=
+                "Geef hier een korte omschrijving van de doelgroep" required
+                rows="7">
+</textarea></label><br>
+                <label>Doelstelling/intentie:<br>
+                <textarea cols="30" name="doelstelling" placeholder=
+                "Geef hier de doelstelling en intentie van het project aan"
+                required rows="7">
+</textarea></label><br>
+                <label>Looptijd:<br>
+                <input type="text" maxlength="2" name="looptijd" placeholder="XX" required                         size="2">weken</label><br>
+                <br>
+                <label>Deadline:<br>
+                <input type="date" name="datum"></label><br><br>
+                <label>Geschikt voor:</label><br>
+                <label><input type="radio" id="eerstejaars" name="geschikt">
+                Eerstejaars studenten</label><br>
+                <label><input type=
+                "radio" id="tweedejaars" name="geschikt" >Tweedejaars studenten</label><br>
+                <label><input type=
+                "radio" id="derdejaars" name="geschikt" >Derdejaars studenten</label><br>
+                <label><input type=
+                "radio" id="afstudeer" name="geschikt" >Afstudeer studenten</label><br>
+                <label><input type=
+                "radio" id="onbekend" name="geschikt">Onbekend</label><br>
+                <br>
+                <label>Opmerkingen<br>
+                <textarea cols="30" name="opmerkingen" placeholder=
+                "Eventuele opmerkingen" rows="7">
+</textarea></label><br>
+                <br>
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend><strong>Stage</strong></legend>
+                <label>Geschikt voor:</label><br>
+                <label><input type=
+                "radio" id="tweedejaars2" name="geschikt" >Tweedejaars studenten</label><br>
+                <label><input type=
+                "radio" id="afstudeer2" name="geschikt">Derdejaars studenten</label><br>
+                <label><input type=
+                "radio" id="onbekend2" name="geschikt">Onbekend</label><br><br>
+                <label>Hoe lang is de stage?</label><br>
+                <label><input type="radio" id="10weken" name="weken">10 weken</label><br>
+                <label><input type="radio" id="20weken" name="weken">20 weken</label><br><br>
+                <label>Beschrijving werkzaamheden<br>
+                <textarea name="werkzaamheden" placeholder="Beschrijf hier de werkzaamheden" cols="30" rows="7"></textarea></label><br><br>
+
+                <label><strong>Beschrijving stagebedrijf</strong></label><br><br>
+                <label>Bedrijfsnaam:<br>
+                <input type="text" name="bedrijfsnaam" placeholder="Naam van stagebedrijf" required size="30"></label><br>
+                <label>Adres:<br>
+                <input type="text" name="adres" placeholder="Adres van stagebedrijf" size="30" required></label><br>
+                <label>Postcode:<br>
+                <input type="text" name="Cijfers2" placeholder="0000" size="4" maxlength="4" required></label>-<input type="text" name="letters2" placeholder="XX" size="2" maxlength="2" required><br>
+                <label>Plaats:<br>
+                <input type="text" name="plaats2" placeholder="Plaatsnaam" size="30" required></label><br>
+                <label>Sector:<br>
+                <input type="text" name="sector" placeholder="Sector bedrijf" size="30" required></label><br>
+                <label>Core business:<br>
+                <input type="text" name="corebusiness" placeholder="Core business stagebedrijf" size="30" required></label><br>
+                <label>Opmerkingen:<br>
+                <textarea name="opmerkingen2" placeholder="Eventuele opmerkingen" cols="30" rows="7"></textarea></label><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+</body>
+</html>
