@@ -1,0 +1,142 @@
+body     {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    font-family: Arial;
+    font-size: 90%;
+}
+
+
+header > img {
+    width: 20em;
+    height: 5em;
+    animation: skew 1s infinite;
+    transform: skew(10deg);
+    animation-direction: alternate;
+}
+
+
+body > header {
+    background-color: bisque;
+    flex-basis: 100%;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1em;
+    order: 1;
+}
+
+
+body > main      {
+    background-color: aqua;
+    order: 2;
+    border-radius: 1em;
+    flex-basis: 35em;
+    text-align:justify;
+    padding:.5em;
+    flex-grow: 1;
+}
+
+
+header > nav ul li  {
+    background-color: aliceblue;
+    display: inline-flex;
+    border: .1em solid black;
+    font-size: 80%;
+}
+
+
+.related  {
+    background-color: darkorange;
+    order:3;
+    border-radius: 1em;
+    text-align:justify;
+    padding: 1em;
+    width: 100%;
+}
+
+.related article {
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    border-radius: 4em;
+    box-shadow:0 1em 1em 0 black;
+    padding: 3em;
+    width: 50em;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+
+body > aside {
+    background-color: chocolate;
+    flex-basis: 15em;
+    order:2;
+    border-radius: 1em;
+    text-align:justify;
+    padding: .5em;
+}
+
+
+body > footer  {
+    background-color: forestgreen;
+    order:4;
+    text-align:justify;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer section {
+    margin: 2em;
+    padding: 2em;
+}
+
+aside article {
+    padding: .2em;
+}
+
+.related article header p {
+    text-align: right;
+    line-height: 0.5em;
+}
+
+section > img {
+    float: right;
+    height: 15em;
+    width: 25em;
+}
+
+a:hover {
+    color: crimson;
+}
+
+
+@media screen and (max-width:50em) {
+    body {
+        width: 100%;
+    }
+    aside {
+        flex-grow: 1;
+    }
+    .related article {
+        width: auto;
+    }
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+
+@media screen and (max-width:30em) {
+     header > nav ul li {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 1em;
+     }
+}

@@ -1,0 +1,136 @@
+
+body > header    {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:darkgray;
+    border-radius:2em;
+    padding: 1em;
+    box-shadow: 0 1em 1em 0 black;
+    margin-bottom: 2em;
+}
+
+
+body > header h1 {
+    text-shadow:0.1em 0.1em .1em white;
+}
+
+#header p {
+    text-align: center;
+}
+#header ul li {
+    display: inline-flex;
+    align-content: space-around;
+    border: 0.1em solid black;
+    background-color: aliceblue;
+    font-size: 80%;
+    text-align: center;
+}
+
+a:hover {
+    color: crimson;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40em;
+    font-family: Arial;
+    text-align: justify;
+}
+
+
+article {
+    background-color: cornflowerblue;
+    border-radius: 2em;
+    box-shadow:0 1em 1em 0 black;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.meta p  {
+    text-align: right;
+    line-height: 0.5em;
+}
+
+#logocmd {
+    width: 20em;
+    height: 5em;
+}
+
+#beroepen {
+    width: 25em;
+    height: 15em;
+    float: right;
+}
+
+#footer   {
+    background-color:darkgray;
+    border-radius:5% 5% 5% 5%;
+    box-shadow:0 1em 1em 0 black;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+#sitemap    {
+    float: left;
+    width: 250px;
+    margin-bottom: 1em;
+}
+
+aside  {
+     display: flex;
+}
+
+aside section {
+    padding: 0.5em;
+
+}
+
+
+@media screen and (max-width:39.9em) {
+    body {
+        width: 100%;
+    }
+    #footer section {
+        display: flex;
+        flex-direction: column;
+    }
+    #sitemap {
+        float: none;
+    }
+}
+
+@media screen and (max-width:35em) {
+     #header ul li {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 1em;
+     }
+}
+
+#logocmd {
+    animation: skew 1s infinite;
+    transform: skew(10deg);
+    animation-direction: alternate;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+
+@media screen and (max-width:35em) {
+     aside {
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 1em;
+     }
+}
+
